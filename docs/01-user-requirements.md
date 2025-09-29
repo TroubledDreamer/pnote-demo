@@ -98,3 +98,35 @@ R5.3 The system shall respect user privacy (exports only their own data).
 
 **Relates to/Dependencies:** Database schema, user authentication.  
 **Priority:** Medium  
+
+
+
+## Non-Functional Requirements
+
+### Performance Requirements
+- **API latency:** p50 < **300 ms**, p95 < **800 ms** for standard endpoints under normal load (≤50 concurrent users).
+- **Write operations:** create/update of sets, intakes, supplements complete in **< 500 ms** end-to-end.
+- **Analytics dashboards:** first meaningful render in **< 2 s** on a mid-tier mobile device over 4G; subsequent navigations **< 1 s** with caching.
+- **Batch analytics:** weekly aggregates generate in **< 10 s**; per-exercise PR forecast in **< 2 s** on demand.
+- **Payloads & pagination:** default page size 25–50; response payloads **< 1 MB**; compression enabled (gzip/br).
+- **Capacity (MVP target):** supports **500 DAU** with **≥50** concurrent sessions without degradation; vertically/horizontally scalable.
+
+### Safety and Security Requirements
+- **Transport security:** HTTPS only (TLS 1.2+); HSTS enabled on public endpoints.
+- **AuthN/AuthZ:** JWT bearer tokens (access **≤15 min**, refresh **≤7 days**); server-side revocation; roles planned for coach/admin.
+- **Data protection:** encryption at rest (e.g., Azure MySQL AES-256); keys/secrets managed via Azure Key Vault or equivalent; no secrets in code or repo.
+- **App hardening:** input validation & output encoding; CSRF (where applicable), rate limiting, account lockout, secure password hashing (bcrypt/argon2); OWASP Top 10 mitigations.
+- **Privacy & compliance:** PII minimization; user self-service **export** and **delete**; GDPR-friendly data flows and logs.
+- **Backups & recovery:** automated daily backups; retention **≥30 days**; **RPO ≤24 h**, **RTO ≤4 h**.
+- **Environment separation:** production, staging, and demo data isolated; demo accounts auto-purged after **≤30 days**.
+
+### Software Quality Attributes
+- **Availability/Reliability:** API uptime **≥99.5%** monthly; error budget tracked; graceful degradation for analytics if upstream is slow.
+- **Maintainability:** type-safe code (TypeScript/Python typing); linting & formatting enforced; backend unit/integration test coverage **≥70%** for core logic; API contract tests for critical endpoints.
+- **Scalability:** stateless API processes; horizontal scale on Azure App Service; DB read-replicas/caching planned for growth.
+- **Usability & Accessibility:** mobile UI adheres to WCAG 2.1 AA contrast; minimum tap target **≥44×44 pt**; clear error states and loading cues.
+- **Observability:** structured logging (correlation IDs), metrics (latency, error rate, throughput), and tracing; alerts on p95 latency, 5xx rate, queue depth, and DB connections.
+- **Portability/Compatibility:** Android **10+** and iOS **15+**; supports common screen sizes; tolerant of intermittent connectivity with retries and queued writes.
+- **Data Quality (Analytics):** model validation tracked; PR probability classifier holds **≥0.70** cross-validated accuracy with drift monitoring and periodic retraining.
+- **Security of exports:** generated CSV links are signed, time-limited, and scoped to the requesting user.
+
