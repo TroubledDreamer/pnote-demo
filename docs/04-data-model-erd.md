@@ -45,51 +45,53 @@ erDiagram
   directory ||--o{ directory_intake : links
   intake ||--o{ directory_intake : linked
 
-  %% Tables (key fields)
   user {
     int id PK
-    varchar name
-    varchar email UNIQUE
-    varchar password
-    timestamp created_at
+    string name
+    string email
+    string password
+    datetime created_at
   }
 
   user_information {
     int id PK
     int user_id FK
-    enum sex
-    decimal height_cm
+    string sex
+    float height_cm
     date date_of_birth
   }
 
   weight {
     int id PK
     int user_id FK
-    decimal weight_kg
+    float weight_kg
     datetime date
   }
 
   height {
     int id PK
     int user_id FK
-    decimal height_cm
+    float height_cm
     datetime date
   }
 
   training_type_list {
     int id PK
-    varchar name
+    string name
+    string description
   }
 
   activity_list {
     int id PK
-    varchar name
+    string name
+    string description
     int training_type_list_id FK
   }
 
   variation_list {
     int id PK
-    varchar name
+    string name
+    string description
   }
 
   activity_allowed_variation {
@@ -99,9 +101,9 @@ erDiagram
 
   activity_config {
     int id PK
+    string name
     int activity_list_id FK
-    binary variation_set_hash
-    varchar name
+    string variation_set_hash
   }
 
   activity_config_variation {
@@ -128,39 +130,40 @@ erDiagram
     int anaerobic_set_id FK
     int rep_order
     int repetition
-    decimal weight_kg
+    float weight_kg
   }
 
   aerobic_set {
     int id PK
     int training_session_id FK
-    decimal duration
-    decimal distance
-    decimal added_weight_kg
+    float duration
+    float distance
+    float added_weight_kg
     datetime date
   }
 
   macronutrient {
     int id PK
     int user_id FK
-    decimal calories
-    decimal protein_g
-    decimal carbohydrate_g
-    decimal fat_g
+    float calories
+    float protein_g
+    float carbohydrate_g
+    float fat_g
     datetime date
   }
 
   intake {
     int id PK
     int user_id FK
-    varchar name
+    string name
     boolean template
     datetime date
   }
 
   supplement_list {
     int id PK
-    varchar name
+    string name
+    string description
   }
 
   supplement {
@@ -168,8 +171,8 @@ erDiagram
     int user_id FK
     int supplement_id FK
     int intake_id FK
-    decimal weight
-    enum unit
+    float weight
+    string unit
     datetime date
   }
 
@@ -178,17 +181,17 @@ erDiagram
     int user_id FK
     boolean is_public
     boolean is_main
-    enum category
-    varchar name
+    string category
+    string name
     int parent_id FK
   }
 
   dietary_template {
     int id PK
     int user_id FK
-    varchar name
+    string name
     boolean is_public
-    json structure
+    string structure
   }
 
   directory_dietary {
@@ -209,12 +212,13 @@ erDiagram
   directory_cache {
     int id PK
     int user_id FK
-    enum category
-    json structure
-    timestamp last_updated
+    string category
+    string structure
+    datetime last_updated
   }
 
   blob_storage {
     int id PK
-    varchar uri
+    string uri
   }
+
