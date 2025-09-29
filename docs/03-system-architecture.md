@@ -8,32 +8,33 @@ Progress Note is designed as a **cross-platform fitness and nutrition tracking s
 
 ```mermaid
 flowchart TD
-    subgraph MobileApp[Mobile App (React Native + TypeScript)]
-        UI[Workout & Nutrition UI]
-        AnalyticsUI[Analytics Dashboard]
-        AuthUI[Login & Registration]
-    end
+  subgraph MobileApp["Mobile App (React Native + TypeScript)"]
+    UI["Workout and Nutrition UI"]
+    AnalyticsUI["Analytics Dashboard"]
+    AuthUI["Login and Registration"]
+  end
 
-    subgraph API[Backend API (Flask, Docker)]
-        AuthService[Authentication Service (JWT)]
-        WorkoutService[Workout Logging Service]
-        NutritionService[Nutrition & Supplements Service]
-        AnalyticsService[Analytics & Predictions]
-    end
+  subgraph API["Backend API (Flask, Docker)"]
+    AuthService["Authentication Service (JWT)"]
+    WorkoutService["Workout Logging Service"]
+    NutritionService["Nutrition and Supplements Service"]
+    AnalyticsService["Analytics and Predictions"]
+  end
 
-    subgraph DB[Database Layer (MySQL on Azure)]
-        UserTable[(User)]
-        WorkoutTable[(Workout & Sets)]
-        NutritionTable[(Intake & Supplements)]
-        DirectoryTable[(Activities & Templates)]
-    end
+  subgraph DB["Database Layer (Azure MySQL)"]
+    UserTable[(User)]
+    WorkoutTable[(Workout and Sets)]
+    NutritionTable[(Intake and Supplements)]
+    DirectoryTable[(Activities and Templates)]
+  end
 
-    subgraph Cloud[☁️ Azure Infrastructure]
-        AppService[App Services]
-        SQL[Azure Database for MySQL]
-        Blob[Azure Blob Storage (exports/media)]
-    end
+  subgraph Cloud["Azure Infrastructure"]
+    AppService["App Service"]
+    SQL["Azure Database for MySQL"]
+    Blob["Azure Blob Storage (exports/media)"]
+  end
 
-    MobileApp -->|HTTPS/REST| API
-    API --> DB
-    API --> Cloud
+  MobileApp -->|HTTPS/REST| API
+  API --> DB
+  API --> Cloud
+
