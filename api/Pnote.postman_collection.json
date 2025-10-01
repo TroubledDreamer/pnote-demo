@@ -1,0 +1,2985 @@
+{
+	"info": {
+		"_postman_id": "2776aacc-8dbf-4c2a-8e7c-30edd681a8b3",
+		"name": "Pnote",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33672925"
+	},
+	"item": [
+		{
+			"name": "basic_functions",
+			"item": [
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "user",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/user/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/user",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\" : \"carlyon\",\n    \"email\" : \"lnnnvnobss@gmail.com\",\n    \"password\" : \"liver\",\n    \"info\" : {\n    \"sex\" : \"M\",\n    \"height_cm\" : 22,\n    \"date_of_birth\" : \"2003-03-03\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/user",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/user/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"n@example.com\",\n  \"password\": \"1476\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/auth/login",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "forget-password",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Carlyon\",\n  \"email\": \"n@example.com\",\n  \"password\": \"1476\",\n  \"info\": {\n    \"sex\": \"M\",\n    \"height_cm\": 180,\n    \"date_of_birth\": \"2000-01-01\"\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/auth/register",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "user-info",
+					"item": [
+						{
+							"name": "user-info",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/user-info/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user-info",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user-infos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/user-info",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user-info"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user-info",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/user-info",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user-info"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user-info",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/user-info/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user-info",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "user-info",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/user-info/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user-info",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "weight",
+					"item": [
+						{
+							"name": "helper",
+							"item": [
+								{
+									"name": "New request",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/api/v1/weight?training_session_id={{training_session_id}}&limit={{limit}}&offset={{offset}}&order_by={{order_by}}&order_dir={{order_dir}}&range={{range}}&tz_offset={{tz_offset}}",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"weight"
+											],
+											"query": [
+												{
+													"key": "training_session_id",
+													"value": "{{training_session_id}}"
+												},
+												{
+													"key": "limit",
+													"value": "{{limit}}"
+												},
+												{
+													"key": "offset",
+													"value": "{{offset}}"
+												},
+												{
+													"key": "order_by",
+													"value": "{{order_by}}"
+												},
+												{
+													"key": "order_dir",
+													"value": "{{order_dir}}"
+												},
+												{
+													"key": "range",
+													"value": "{{range}}"
+												},
+												{
+													"key": "tz_offset",
+													"value": "{{tz_offset}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "weight",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/weight/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"weight",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "weights",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/weight",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"weight"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "weight",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"weight_kg\" : \"1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/weight",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"weight"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "weight",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/weight",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"weight"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "weight",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/weight",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"weight"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "height",
+					"item": [
+						{
+							"name": "height",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/height/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"height",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "heights",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/height",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"height"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "height",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/height",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"height"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "height",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/height/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"height",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "height",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/height/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"height",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "variation-list",
+					"item": [
+						{
+							"name": "variation-list",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/variation-list/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"variation-list",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "variation-lists",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/variation-list",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"variation-list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "variation-list",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/variation-list",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"variation-list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "variation-list",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/variation-list/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"variation-list",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "variation-list",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/variation-list/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"variation-list",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "training-type",
+					"item": [
+						{
+							"name": "training-type",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "training-types",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "training-type",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "training-type",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "training-type",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "activity-list",
+					"item": [
+						{
+							"name": "activity-list",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-lists",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-list",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-list",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-list",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "activity-variation",
+					"item": [
+						{
+							"name": "activity-variation",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-variations",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-variation",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-variation",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-variation",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "training-session",
+					"item": [
+						{
+							"name": "training-session",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "training-sessions",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/training-session",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"training-session"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "training-session",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"activity_variation_id\" : 1,\n    \"training_type_list_id\" : 1,\n    \"date\" : \"2025-08-25T01:29:54.385Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/training-session",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"training-session"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "training-session",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "training-session",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "anaerobic-set",
+					"item": [
+						{
+							"name": "anaerobic-set",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/anaerobic-set/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"anaerobic-set",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "anaerobic-sets",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Cache-Control",
+										"value": "no-cache",
+										"name": "cache-control",
+										"type": "text"
+									},
+									{
+										"key": "Postman-Token",
+										"value": "<calculated when request is sent>",
+										"name": "postman-token",
+										"type": "text"
+									},
+									{
+										"key": "Host",
+										"value": "<calculated when request is sent>",
+										"name": "host",
+										"type": "text"
+									},
+									{
+										"key": "User-Agent",
+										"value": "PostmanRuntime/7.39.1",
+										"name": "user-agent",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*",
+										"name": "accept",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Encoding",
+										"value": "gzip, deflate, br",
+										"name": "accept-encoding",
+										"type": "text"
+									},
+									{
+										"key": "Connection",
+										"value": "keep-alive",
+										"name": "connection",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/api/v1/anaerobic-set?training_session_id=3",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"anaerobic-set"
+									],
+									"query": [
+										{
+											"key": "training_session_id",
+											"value": "3"
+										},
+										{
+											"key": "limit",
+											"value": "{{limit}}",
+											"disabled": true
+										},
+										{
+											"key": "offset",
+											"value": "{{offset}}",
+											"disabled": true
+										},
+										{
+											"key": "order_by",
+											"value": "{{order_by}}",
+											"disabled": true
+										},
+										{
+											"key": "order_dir",
+											"value": "{{order_dir}}",
+											"disabled": true
+										},
+										{
+											"key": "range",
+											"value": "{{range}}",
+											"disabled": true
+										},
+										{
+											"key": "tz_offset",
+											"value": "{{tz_offset}}",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "anaerobic-set",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"training_session_id\" : 3,\n    \"date\" : \"2025-06-17 09:05:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/anaerobic-set",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"anaerobic-set"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "anaerobic-set",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/anaerobic-set/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"anaerobic-set",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "anaerobic-set",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/anaerobic-set/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"anaerobic-set",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "anaerobic-rep",
+					"item": [
+						{
+							"name": "anaerobic-rep",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/anaerobic-rep/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"anaerobic-rep",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "anaerobic-reps",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/anaerobic-rep",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"anaerobic-rep"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "anaerobic-rep",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \n    \"anaerobic_set_id\" : 1,\n    \"rep_order\" : 1,\n    \"repetition\" : 5,\n    \"weight_kg\" : 1.3\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/anaerobic-rep/",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"anaerobic-rep",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "anaerobic-rep",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"anaerobic_set_id\" : 1,\n    \"order\" : 1,\n    \"repetition\" : 5,\n    \"weight_kg\" : 1.3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/anaerobic-rep/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"anaerobic-rep",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "anaerobic-rep",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/anaerobic-rep/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"anaerobic-rep",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "aerobic-set",
+					"item": [
+						{
+							"name": "helper",
+							"item": [
+								{
+									"name": "New request",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": ""
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "aerobic-set",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/aerobic-set/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"aerobic-set",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "aerobic-sets",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/aerobic-set",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"aerobic-set"
+									],
+									"query": [
+										{
+											"key": "training_session_id",
+											"value": "{{training_session_id}}",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "{{limit}}",
+											"disabled": true
+										},
+										{
+											"key": "offset",
+											"value": "{{offset}}",
+											"disabled": true
+										},
+										{
+											"key": "order_by",
+											"value": "{{order_by}}",
+											"disabled": true
+										},
+										{
+											"key": "order_dir",
+											"value": "{{order_dir}}",
+											"disabled": true
+										},
+										{
+											"key": "range",
+											"value": "{{range}}",
+											"disabled": true
+										},
+										{
+											"key": "tz_offset",
+											"value": "{{tz_offset}}",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "aerobic-set",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"training_session_id\" : 1,\n    \"duration\" : 34,\n    \"distance\" : 34,\n    \"added_weight_kg\" : 33,\n    \"date\" : \"2025-08-25T01:29:54.385Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/aerobic-set/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"aerobic-set",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "aerobic-set",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/aerobic-set/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"aerobic-set",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "aerobic-set",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/aerobic-set/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"aerobic-set",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "macronutrient",
+					"item": [
+						{
+							"name": "macronutrient",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/macronutrient",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"macronutrient"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "macronutrients",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/macronutrient",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"macronutrient"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "macronutrient",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"calories\": \"2200.5\",\n  \"protein_g\": \"150.0\",\n  \"carbohydrate_g\": \"250.0\",\n  \"fat_g\": \"70.0\",\n  \"date\": \"2025-07-20T14:30:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/macronutrient",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"macronutrient"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "macronutrient",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "macronutrient",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "supplement-list",
+					"item": [
+						{
+							"name": "supplement-list",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "supplement-lists",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "supplement-list",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "supplement-list",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "supplement-list",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "supplement",
+					"item": [
+						{
+							"name": "supplement",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "supplements",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "supplement",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"supplement_id\" : 1,\n    \"intake_id\" : 2,\n    \"weight\" : 12,\n    \"unit\" : \"mg\",\n    \"date\" : \"2025-06-17 09:05:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/supplement",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"supplement"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "supplement",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "supplement",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "blob-storage",
+					"item": [
+						{
+							"name": "blob-storage",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "blob-storages",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "blob-storage",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "blob-storage",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "blob-storage",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "directory",
+					"item": [
+						{
+							"name": "folder",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"My Folder\",\n  \"category\": \"dietary\",\n  \"parent_id\": null,\n  \"is_public\": false\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/directories-rel/",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"directories-rel",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "folder",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/directories-rel/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"directories-rel",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "folder",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/directories-rel/cache/1?category=dietary",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"directories-rel",
+										"cache",
+										"1"
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "dietary"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "folder-cache",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"My Folder\",\n  \"category\": \"dietary\",\n  \"parent_id\": null,\n  \"is_public\": false\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/directories-rel/cache?category=activity",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"directories-rel",
+										"cache"
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "dietary",
+											"disabled": true
+										},
+										{
+											"key": "category",
+											"value": "activity"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Template to Folder",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \"template_id\": 1,  \"category\":\"activity\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/directories-rel/2/add-template",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"directories-rel",
+										"2",
+										"add-template"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Template",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/dietary_template",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"dietary_template"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "dietary-template",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Chicken\",\n  \"structure\": {\n    \"name\": \"Chicken\",\n    \"macronutrient\": [\n      { \"name\": \"calories\", \"value\": 0, \"unit\": \"mg\" },\n      { \"name\": \"protein_g\", \"value\": 0, \"unit\": \"mg\" },\n      { \"name\": \"carbohydrate_g\", \"value\": 0, \"unit\": \"mg\" },\n      { \"name\": \"fat_g\", \"value\": 0, \"unit\": \"mg\" }\n    ],\n    \"supplement\": [\n      { \"name\": \"Creatine Monohydrate\", \"value\": 0, \"unit\": \"mg\" }\n    ]\n  }\n}\n\n// {\n//   \"name\": \"Root\",                 \n//   \"templates\": [15, 18],           \n//   \"folders\": [                    \n//     {\n//       \"id\": 2,\n//       \"name\": \"Chest Workouts\",\n//       \"templates\": [15, 18]       \n//     },\n//     {\n//       \"id\": 3,\n//       \"name\": \"Leg Workouts\",\n//       \"templates\": [21]            \n//     }\n//   ]\n// }\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/dietary_template",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"dietary_template"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "main folder",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/directories-rel/cache/main?category=activity",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"directories-rel",
+										"cache",
+										"main"
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "activity"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-template (ignore its add temp to folder)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n \"name\": \"Root\",\n  \"templates\": [15, 18],           \n  \"folders\": [                    \n    {\n      \"id\": 2,\n      \"name\": \"Chest Workouts\",\n      \"templates\": [15, 18]       \n    },\n    {\n      \"id\": 3,\n      \"name\": \"Leg Workouts\",\n      \"templates\": [21]            \n    }\n  ]\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "dietary-template",
+					"item": [
+						{
+							"name": "dietary-template",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/dietary-template/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"dietary-template",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "dietary-templates",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/dietary-template",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"dietary-template"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "dietary-template",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Chicken\",\n  \"structure\": {\n    \"name\": \"Chicken\",\n    \"macronutrient\": [\n      { \"name\": \"calories\", \"value\": 0, \"unit\": \"mg\" },\n      { \"name\": \"protein_g\", \"value\": 0, \"unit\": \"mg\" },\n      { \"name\": \"carbohydrate_g\", \"value\": 0, \"unit\": \"mg\" },\n      { \"name\": \"fat_g\", \"value\": 0, \"unit\": \"mg\" }\n    ],\n    \"supplement\": [\n      { \"name\": \"Creatine Monohydrate\", \"value\": 0, \"unit\": \"mg\" }\n    ]\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/dietary-template",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"dietary-template"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "dietary-template",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Chicken\",\n  \"structure\": {\n    \"name\": \"Chicken\",\n    \"macronutrient\": [\n      { \"name\": \"calories\", \"value\": 0, \"unit\": \"mg\" },\n      { \"name\": \"protein_g\", \"value\": 0, \"unit\": \"mg\" },\n      { \"name\": \"carbohydrate_g\", \"value\": 0, \"unit\": \"mg\" },\n      { \"name\": \"fat_g\", \"value\": 0, \"unit\": \"mg\" }\n    ],\n    \"supplement\": [\n      { \"name\": \"Creatine Monohydrate\", \"value\": 0, \"unit\": \"mg\" }\n    ]\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/dietary-template/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"dietary-template",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "dietary-template",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/dietary-template/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"dietary-template",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "activity-config",
+					"item": [
+						{
+							"name": "activity-config",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-configs",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-config",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"activity_list_id\": 1,\n  \"variation_ids\": [1, 2],\n  \"name\": \"Pull-ups (neutral + wide)\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/activity-config",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"activity-config"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-config",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-config",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "activity-config-variation",
+					"item": [
+						{
+							"name": "activity-config-variation",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/activity-config-variation/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"activity-config-variation",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-config-variations",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/activity-config-variation",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"activity-config-variation"
+									],
+									"query": [
+										{
+											"key": "activity_config_id",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-config-variation",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"activity_list_id\": 1,\n  \"variation_ids\": [1, 2],\n  \"name\": \"Pull-ups (neutral + wide)\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/activity-config-variation",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"activity-config-variation"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-config-variation",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/activity-config-variation/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"activity-config-variation",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-config-variation",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/activity-config-variation/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"activity-config-variation",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New request",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "activity-allowed-variation",
+					"item": [
+						{
+							"name": "activity-allowed-variation",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/activity-allowed-variation/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"activity-allowed-variation",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-allowed-variation",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/activity-allowed-variation",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"activity-allowed-variation"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-allowed-variation",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"activity_list_id\": 2,\n  \"variation_list_id\": 1,\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/activity-allowed-variation",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"activity-allowed-variation"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-allowed-variation",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/activity-allowed-variation/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"activity-allowed-variation",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activity-allowed-variation",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/activity-allowed-variation/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"activity-allowed-variation",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "intake",
+					"item": [
+						{
+							"name": "intake",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/intake/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"intake",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "intakes",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/intake",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"intake"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "intake",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Chicken\",\n  \"template\": true,\n  \"date\": \"2025-06-17 09:05:00\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/v1/intake/",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"intake",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "intake",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/activity-allowed-variation/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"activity-allowed-variation",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "intake",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v1/intake/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"intake",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "apikey"
+			}
+		},
+		{
+			"name": "data_retrieval",
+			"item": []
+		},
+		{
+			"name": "data_prediciton",
+			"item": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6ImNhcmx5b25AZXhhbXBsZS5jb20iLCJuYW1lIjoiQ2FybHlvbiIsImV4cCI6MTc1NDYwNzAzMH0.Hj71l1GFfi6kYMiFVW8KcXWkHeJoNgHKx2QL_unFjDw",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:5001",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "------",
+			"type": "string"
+		}
+	]
+}
