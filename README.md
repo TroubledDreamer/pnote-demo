@@ -32,7 +32,7 @@ The full production source code remains **private** to protect intellectual prop
 ## Architecture
 
 - **Frontend:** React Native (TypeScript, Expo)  
-- **Backend:** Flask + MySQL (Dockerized)  
+- **Backend:** Flask + MySQL (Dockerized, Azure Container apps)  
 - **Cloud:** Microsoft Azure (Container Apps + Database)  
 - **Analytics:** Python *(pandas, scikit-learn, statsmodels, matplotlib)*  
 
