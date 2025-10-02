@@ -22,11 +22,11 @@ The full production source code remains **private** to protect intellectual prop
 
 ## Demo
 
-- **Android APK:** [Download here](#https://expo.dev/accounts/carlyon/projects/p-note/builds/dba710d7-e74a-4ad5-bd52-b463a28fdb82)    
-- **Video Demo (YouTube, unlisted):** [Watch here](#https://www.youtube.com/playlist?list=PLBXTsix5hOG72uMRxgAsm-baFxPwtASec) 
-- **Data analysis proof of concept:** [View here](#https://github.com/TroubledDreamer/workout-analytics) 
-- **Screenshots:** `demo/screenshots`   
-
+- **Android APK:** [Download here](https://expo.dev/accounts/carlyon/projects/p-note/builds/dba710d7-e74a-4ad5-bd52-b463a28fdb82)    
+- **Video Demo (YouTube, unlisted):** [Watch here](https://www.youtube.com/playlist?list=PLBXTsix5hOG72uMRxgAsm-baFxPwtASec) 
+- **Data analysis proof of concept:** [View here](https://github.com/TroubledDreamer/workout-analytics) 
+- **Screenshots:** `demo/screenshots`
+  
 ---
 
 ## Architecture
