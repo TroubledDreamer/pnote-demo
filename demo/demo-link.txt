@@ -1,5 +1,5 @@
 Android APK: 
-https://expo.dev/accounts/carlyon/projects/p-note/builds/dba710d7-e74a-4ad5-bd52-b463a28fdb82
+https://expo.dev/accounts/carlyon/projects/p-note/builds/256e0247-c49f-4f87-a199-e3e1c2d56d6c
 
 Data analysis proof of concept:
 https://github.com/TroubledDreamer/workout-analytics
